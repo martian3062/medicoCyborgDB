@@ -52,3 +52,4 @@ def generate_embedding(text: str):
             return _hash_embed(text)
 
     return _hash_embed(text)
+
