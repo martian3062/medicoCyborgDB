@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev-front\" \"npm run dev-back\"",
+    "dev": "node ./node_modules/vite/bin/vite.js",
     "dev-front": "vite --host",
     "dev-back": "cd ../medgenie_backend && python manage.py runserver 0.0.0.0:8000",
-    "build": "vite build",
-    "preview": "vite preview --host"
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview"
   },
   "dependencies": {
     "gsap": "^3.14.2",
