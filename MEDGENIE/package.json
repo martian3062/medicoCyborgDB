@@ -1,0 +1,29 @@
+{
+  "name": "medgenie",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev-front\" \"npm run dev-back\"",
+    "dev-front": "vite --host",
+    "dev-back": "cd ../medgenie_backend && python manage.py runserver 0.0.0.0:8000",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.30.2",
+    "recharts": "^3.4.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.1.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Frontend",
+      "type": "shell",
+      "command": "cd MEDGENIE && npm install && npm run build",
+      "group": "build"
+    },
+    {
+      "label": "Build Backend",
+      "type": "shell",
+      "command": "cd medgenie_backend && pip install -r requirements.txt",
+      "group": "build"
+    },
+    {
+      "label": "Start Backend (dev)",
+      "type": "shell",
+      "command": "cd medgenie_backend && python manage.py runserver",
+      "group": "test"
+    },
+    {
+      "label": "Start Frontend (dev)",
+      "type": "shell",
+      "command": "cd MEDGENIE && npm run dev -- --host",
+      "group": "test"
+    }
+  ]
+}
