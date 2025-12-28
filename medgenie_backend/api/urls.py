@@ -8,6 +8,7 @@ urlpatterns = [
     # AI
     path("ai/chat/", ai_chat, name="ai_chat"),
     path("chat/", ai_chat, name="ai_chat_alias"),
+    path("", health),
 
     # In-memory "Cyborg" demo (vault)
     path("cyborg/index/", cyborg_index, name="cyborg_index"),
