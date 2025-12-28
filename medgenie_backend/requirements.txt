@@ -6,6 +6,7 @@ whitenoise
 dj-database-url
 psycopg2-binary
 Pillow
+groq
 python-dotenv
 djangorestframework-simplejwt
 
